@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="description" content="HTML-Essentials-HomeTask"> <!--task name -->
+  <meta name="description" content="CSS-Basic-HomeTask"> <!--task name -->
   <meta name="author" content="Luis Ignacio">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo.png">
-  <title>HTML-Essentials-HomeTask</title>
+  <title>CSS-Basic-HomeTask</title>
+  <link rel="stylesheet" href="style.css">
+  
+<!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 <header>
-    <p><a href="Main_Prject.com" target="_self">Project</a></p>
-    <ul>
-        <li><a href="Projects.com" target="_self">Projects</a></li>
-        <li><a href="About_us.com" target="_self">About us</a></li>
-        <li><a href="Stories.com" target="_self">Stories</a></li>
-        <li><a href="Contact.com" target="_self">Contact</a></li>
+    <p class="identifier"><a href="#" target="_self">Project</a></p>
+    <ul class="nav-menu">
+        <li class="projects"><a href="#" target="_self">Projects</a></li>
+        <li class="about-us"><a href="#" target="_self">About us</a></li>
+        <li class="stories"><a href="#" target="_self">Stories</a></li>
+        <li class="contact"><a href="#" target="_self">Contact</a></li>
     </ul>
-</header>
-
+  
+    <img src="assets/DesktopBackground.png" class="background"/>
 
     <img src="assets/logo.png" class="logo" width="63" height="63"/> 
     <!-- I had some issues to get the image with the correct trasnparency this will be modified in further versions-->
@@ -27,11 +38,13 @@
         Your Headline<br>
         Here
     </h1>
-    <h2>
+    <h2 class="mainsubheadline">
         Lorem ipsum dolor sit amet consectetur<br>
         adipisicing elit sed do eiusmod.
     </h2>
-<article>
+
+</header>
+<article class="main-article">
         <h2>
             This is the Section Headline,<br> 
             Continues to Two Lines
@@ -45,36 +58,43 @@
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
                     Sed ut perspiciatis unde omnis.
-                </p>
-                <p>
+                    <br> 
+                    <br> 
                     Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-    <div>
-        <button>Read more</button>
-    </div> 
+    <!-- <div class="button-box"> -->
+        <button class="readmore" Width="115px" Height="36px">Read more</button>       
+    <!-- </div>  -->
 </article>
+    <img src="assets/imageConference.png" class="background2"/>
+<div class="media-content">
+    
         <h2>
             Learn more <br> 
             about our culture...
         </h2>
-    <div>
-        <button>&#9654</button>
+    <div class="play-button">
+        <button class="play-icon">&#9654</button>
     </div>
             <h3>
-                Duis aute irure dolor<br> 
-                in reprehenderit in voluptate velit esse<br> 
-                cillum dolore eu fugiat nulla
+                Duis aute irure dolor in reprehenderit<br>
+                in voluptate velit esse cillum dolore eu<br>
+                fugiat nulla
             </h3>
-
+</div>
   
     <footer>
         <img src="assets/logo.png" class="logo" width="20" height="20"/>
-        Project,<br>
-        <i>123 Street,</i><br>
-        <i>Anytown USA 12345,</i><a href="hello@website.com" target="_blank">hello@website.com</a><br>
-        <br>
-        &#169 2021 Project. All rights reserved
+        <span class="footer-head">Project</span>
+        <span class="adress">
+            <i>123 Street,</i><br>
+            <i>Anytown USA 12345,</i>
+        </span>
+        
+        <a class="email" href="hello@website.com" target="_blank">hello@website.com</a>
+        
+        <span class="copy-right">&#169 2021 Project. All rights reserved</span>
     </footer>
 
 </body>

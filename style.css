@@ -1,0 +1,388 @@
+.identifier {
+    /* PROJECT */
+    position: absolute;
+    width: 91px;
+    height: 16px;
+    left: 152px;
+    top: 45px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    /* identical to box height, or 80% */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.nav-menu {
+    /* unordered list general parameters */
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.projects {
+    /* PROJECTS */
+
+    position: absolute;
+    width: 81px;
+    height: 16px;
+    left: 408px;
+    top: 49px;
+}
+.about-us {
+    /* ABOUT US */
+
+    position: absolute;
+    width: 81px;
+    height: 16px;
+    left: 521px;
+    top: 49px;   
+}
+.stories {
+    /* STORIES */
+
+    position: absolute;
+    width: 67px;
+    height: 16px;
+    left: 631px;
+    top: 49px; 
+}
+.contact{
+    /* CONTACT */
+
+    position: absolute;
+    width: 73px;
+    height: 16px;
+    left: 730px;
+    top: 49px;
+}
+
+/* Desktop_Backgrounds_1920x1200_6 3 */
+.background {
+    position: absolute;
+    width: 1315px;
+    height: 822px;
+    left: -116px;
+    top: -22px;
+}
+header .logo {
+    /* [PLACEHOLDER LOGO] */
+    position: absolute;
+    /* left: 0%; */
+    /* right: 0.01%; */
+    /* top: 0%; */
+    /* bottom: 0.01%; */
+    /* align-items: center; */
+    left: 566px;
+    top: 286px;
+    background: #55C2D8;
+}
+h1 {
+    /* Main headline */
+    position: absolute;
+    width: 386px;
+    height: 118px;
+    left: 407px;
+    top: 328px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.mainsubheadline {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
+    position: absolute;
+    width: 426px;
+    height: 56px;
+    left: 387px;
+    top: 488px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+article {
+    /* Rectangle 6 */
+    position: absolute;
+    width: 1200px;
+    height: 700px;
+    left: 0px;
+    top: 800px;
+
+    background: #EEEEEE;
+}
+article h2 {
+    /* This is the Section Headline, Continues to Two Lines */
+    position: absolute;
+    width: 669px;
+    height: 119px;
+    left: 265px;
+    top: 87px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+
+    text-align: center;
+
+    color: #464547;
+}
+article h3 {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
+    position: absolute;
+    width: 427px;
+    height: 57px;
+    left: 387px;
+    top: 246px;
+    box-sizing: border-box;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+    
+    text-align: center;
+    
+    color: #666666;
+}
+    
+p{
+    text-align: center;
+    
+    /* margin: 24px 52px 0px; */
+    position: absolute;
+    width: 983px;
+    height: 194px;
+    left: 97px;
+    top: 351px;
+
+    /* font-family: 'Source Sans Pro'; */
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+    
+    color: #000000;
+}
+/* .button-box {
+    width: 115;
+    height: 36;
+} */
+.readmore {
+    /* READ MORE */
+    position: absolute;
+    left: 542px;
+    right: 543px;
+    top: 566px;
+    bottom: 98px;
+
+    font-family: 'Oswald';
+    font-size: 14px;
+    line-height: 20px;
+    /* or 186% */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: #55C2D8;
+    border-radius: 18px; 
+    border-width: 0px;   
+}
+.media-content {
+    /* Rectangle 5 */
+    position: absolute;
+    width: 1200px;
+    height: 666px;
+    left: 0px;
+    top: 1500px;
+
+    background: rgba(140, 79, 42, 0.3);
+}
+.background2 { 
+    /* imageConference.png */
+    position: absolute;
+    width: 1200px;
+    height: 666px;
+    left: 0px;
+    top: 1500px;
+}
+div h2 {
+    /* Learn more about our culture... */
+    position: absolute;
+    width: 480px;
+    height: 117px;
+    left: 360px;
+    top: 70px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+div h3 {
+    /* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. */
+    position: absolute;
+    width: 480px;
+    height: 102px;
+    left: 360px;
+    top: 474px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.play-button {
+    /* play-button */
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 525px;
+    top: 260px;
+    
+    background: #39C2D7;
+
+    border-radius: 75px;
+    border-width: 0px;
+}
+.play-icon {
+    /* play-icon */
+    position: absolute;
+    width: 55px;
+    height: 80px;
+    left: 47px;
+    top: 35px;
+    font-size: 70px;
+
+    background: transparent;
+    color: #FFFFFF;
+    border-radius: 2px;
+    border-width: 0px;
+}
+footer {
+    /* footer information */
+    position: absolute;
+    width: 1200px;
+    height: 170px;
+    left: 0px;
+    top: 2166px;
+
+    background: #464547;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.4);
+}
+footer .logo {
+    /* [PLACEHOLDER LOGO] */
+    position: absolute;
+    left: 145px;
+    right: 1035px;
+    top: 19px;
+    bottom: 131px;
+
+    background: #55C2D8;
+}
+.footer-head {
+    /* PROJECT */
+    position: absolute;
+    width: 92px;
+    height: 16px;
+    left: 181px;
+    top: 21px;
+
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 89% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.adress {
+    /* 123 Street, Anytown, USA 12345 */
+    position: absolute;
+    width: 174px;
+    height: 33px;
+    left: 140px;
+    top: 51px;
+
+    font-size: 16px;
+    line-height: 19px;
+    /* or 119% */
+}
+.email {   
+    /* hello@website.com */
+    position: absolute;
+    width: 142px;
+    height: 22px;
+    left: 140px;
+    top: 90px;
+
+    font-size: 16px;
+    line-height: 19px;
+    /* or 119% */
+}
+.copy-right {
+    /* © 2021 Project. All rights reserved */
+    position: absolute;
+    width: 243px;
+    height: 20px;
+    left: 140px;
+    top: 112px;
+
+    font-size: 16px;
+    line-height: 19px;
+    /* or 119% */
+}
