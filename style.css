@@ -1,10 +1,20 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+
+
 .identifier {
     /* PROJECT */
     position: absolute;
     width: 91px;
     height: 16px;
     left: 152px;
-    top: 45px;
+    top: 28px;
 
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -15,23 +25,39 @@
 
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    text-decoration: none;
 
     color: #FFFFFF;
+    z-index: 100;
 }
-.nav-menu {
+
+.identifier a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-menu li{
     /* unordered list general parameters */
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    z-index: 100;
     /* identical to box height, or 114% */
 
     letter-spacing: 0.2em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    list-style: none;
+
+    /* color: #FFFFFF; */
 }
+.nav-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .projects {
     /* PROJECTS */
 
@@ -48,7 +74,12 @@
     width: 81px;
     height: 16px;
     left: 521px;
-    top: 49px;   
+    top: 49px; 
+}
+.about-us a {
+    display: block;
+    width: 100px
+
 }
 .stories {
     /* STORIES */
@@ -87,7 +118,6 @@ header .logo {
     /* align-items: center; */
     left: 566px;
     top: 286px;
-    background: #55C2D8;
 }
 h1 {
     /* Main headline */
@@ -329,9 +359,7 @@ footer .logo {
     left: 145px;
     right: 1035px;
     top: 19px;
-    bottom: 131px;
-
-    background: #55C2D8;
+    bottom: 131px;  
 }
 .footer-head {
     /* PROJECT */
