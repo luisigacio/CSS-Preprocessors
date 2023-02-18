@@ -3,9 +3,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
-
 /* here starts the header CSS */
-
 header {
     background: url(assets/DesktopBackground.png);
     background-size: cover;
@@ -26,27 +24,18 @@ nav {
 nav ul{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly;  */
-    
     width: 100%;
-    /* background-color: #39C2D7; */
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    /* identical to box height, or 114% */
-
     letter-spacing: 0.2em;
     text-transform: uppercase;
-
     list-style: none;
-
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-
     margin: 0;
 }
 nav ul li {
@@ -59,20 +48,15 @@ nav ul li {
 .identifier {
     /* PROJECT */
     width: 50%;
-    /* background-color: red;     */
-    
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 16px;
-    /* identical to box height, or 80% */
-
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-
     color: #FFFFFF;
 }
 .identifier a {
@@ -89,51 +73,37 @@ header div {
     width: 100%;
     height: 100%;
 }
-
 /* Here starts the Main content box */
-
 h1 {
     /* Main headline */
     width: 386px;
     height: 118px;
-    
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
-    /* or 133% */
-    
     text-align: center;
-    
     color: #FFFFFF;
 }
 .mainsubheadline {
     /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
     width: 426px;
     height: 56px;
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    /* or 133% */
-
     text-align: center;
-
     color: rgba(255, 255, 255, 0.7);
 }
 article {
-    /* Rectangle 6 */
     width: 1200px;
     height: 700px;
-
     background: #EEEEEE;
-
     font-family: 'Source Sans Pro';
     font-style: normal;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,54 +113,37 @@ article h2 {
     /* This is the Section Headline, Continues to Two Lines */
     width: 669px;
     height: 119px;
-
     font-family: 'Oswald';
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
-    /* or 133% */
-
     text-align: center;
-
     color: #464547;
-
     margin: 0;
 }
 article h3 {
     /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
     margin-block-start: 0px;
     margin-block-end: 0px;
-    
     width: 427px;
     height: 57px;
-
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    /* or 133% */
-    
     text-align: center;
-    
     color: #666666;
     padding: 50px 0px 50px 0px;
 }
 article div {
     display: flex;
     flex-direction: row;
-
 }
 article div p {
-    text-align: left;
-    
-    /* margin: 24px 52px 0px; */
-        
+    text-align: left;    
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    /* or 138% */
-    
     color: #000000;
-
     width: 400px;
 }
 article div p:first-child {
@@ -203,26 +156,19 @@ article div p:last-child {
     /* READ MORE */
     padding: 8px 17.5px;
     margin: 25px 0px 0px;
-
     font-family: 'Oswald';
     font-size: 14px;
     line-height: 20px;
-    /* or 186% */
-
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
     color: #FFFFFF;
     background: #55C2D8;
     border-radius: 18px; 
     border-width: 0px;   
 }
-
 /* Here ends the main box and starts the media box*/
-
 .media-content {
-    /* Rectangle 5 */
     width: 100%;
     height: 666px;
     background: url(assets/imageConference.png);
@@ -233,7 +179,6 @@ article div p:last-child {
     width: 100%;
     height: 100%;
     background-color: rgba(140, 79, 42, 0.3);
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -247,113 +192,80 @@ article div p:last-child {
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
-    /* or 133% */
-
     text-align: center;
-
     color: #FFFFFF;
-
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
 .media-content .media-container h3 {
     /* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. */
-        font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    /* or 133% */
-
     text-align: center;
-
     color: #FFFFFF;
-
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
-
 .media-container div {
     width: 145px;
     height: 145px;
     border-radius: 50%;
     background-color: #39C2D7;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin: 60px 0px 60px;
-    
+    margin: 60px 0px 60px;  
 }
-
 .play-icon {
     /* play-icon */
     width: 55px;
     height: 80px;
     font-size: 70px;
-
     background: transparent;
     color: #FFFFFF;
     border-width: 0px;
 }
-
 /* Here starts the Footer and ends the media box */
-
 footer {
-    /* footer information */
-    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     height: 170px;
-
     background: #464547;
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-
     color: rgba(255, 255, 255, 0.4);
 }
-footer .logo {
-    /* [PLACEHOLDER LOGO] */
-}
 .footer-head {
-    /* PROJECT */
-    width: 92px;
-    height: 16px;
-
+    /* PROJECT */ 
     font-size: 18px;
     line-height: 16px;
-    /* identical to box height, or 89% */
-
     letter-spacing: 0.2em;
     text-transform: uppercase;
-
     color: #FFFFFF;
+    margin: 40px 81px 0px 0px;
 }
-.adress {
+address {
     /* 123 Street, Anytown, USA 12345 */
-    width: 174px;
-    height: 33px;
-
     font-size: 16px;
     line-height: 19px;
-    /* or 119% */
+    margin: 40px 318px 0px 0px;
 }
 .email {   
     /* hello@website.com */
-    width: 142px;
-    height: 22px;
-
-    font-size: 16px;
-    line-height: 19px;
-    /* or 119% */
+    text-decoration: none;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.4);
 }
 .copy-right {
     /* © 2021 Project. All rights reserved */
-    width: 243px;
-    height: 20px;
-
     font-size: 16px;
     line-height: 19px;
-    /* or 119% */
+    align-self: center;
+    padding: 36px 0px 0px 0px;
 }
