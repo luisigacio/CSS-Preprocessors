@@ -72,7 +72,6 @@ header div {
     width: 100%;
     height: 100%;
 }
-/* Here starts the Main content box */
 h1 {
     /* Main headline */
     width: 386px;
@@ -96,20 +95,20 @@ h1 {
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
 }
+/* Here starts the Main content box */
 article {
     width: 100%;
-    height: 700px;
     background: #EEEEEE;
     font-style: normal;
+}
+article > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 90px 0px;
 }
 article h2 {
     /* This is the Section Headline, Continues to Two Lines */
-    width: 669px;
-    height: 119px;
     font-family: 'Oswald';
     font-weight: 700;
     font-size: 48px;
@@ -122,8 +121,6 @@ article h3 {
     /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
     margin-block-start: 0px;
     margin-block-end: 0px;
-    width: 427px;
-    height: 57px;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -131,9 +128,12 @@ article h3 {
     color: #666666;
     padding: 50px 0px 50px 0px;
 }
-article div {
+article div div{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 80px;
 }
 article div p {
     text-align: left;    
@@ -141,13 +141,15 @@ article div p {
     font-size: 16px;
     line-height: 22px;
     color: #666666;
-    width: 400px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 article div p:first-child {
-    margin: 0px 40px 0px 0px;
+    padding-left: 150px;
 }
+
 article div p:last-child {
-    margin: 0px 0px 0px 40px;
+    padding-right: 150px;
 }
 .readmore {
     /* READ MORE */
@@ -226,7 +228,6 @@ article div p:last-child {
 }
 /* Here starts the Footer and ends the media box */
 footer {
-    
     width: 100%;
     background: #464547;
 }
@@ -355,11 +356,8 @@ address {
         width: 100%;
         height: 100%;
     }
-    /* Here starts the Main content box */
     h1 {
         /* Main headline */
-        width: 386px;
-        height: 118px;
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 700;
@@ -370,8 +368,6 @@ address {
     }
     .mainsubheadline {
         /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
-        width: 426px;
-        height: 56px;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -379,78 +375,27 @@ address {
         text-align: center;
         color: rgba(255, 255, 255, 0.7);
     }
-    article {
-        width: 100%;
-        height: 700px;
-        background: #EEEEEE;
-        font-style: normal;
-        display: flex;
+    /* Here starts the Main content box */
+    article > div {
+        padding: 70px 0px;
+    }
+    article div div{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    article h2 {
-        /* This is the Section Headline, Continues to Two Lines */
-        width: 669px;
-        height: 119px;
-        font-family: 'Oswald';
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 64px;
-        text-align: center;
-        color: #464547;
-        margin: 0;
-    }
-    article h3 {
-        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-        width: 427px;
-        height: 57px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        text-align: center;
-        color: #666666;
-        padding: 50px 0px 50px 0px;
-    }
-    article div {
-        display: flex;
-        flex-direction: row;
-    }
-    article div p {
-        text-align: left;    
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        color: #666666;
-        width: 400px;
+        gap: 24px;
     }
     article div p:first-child {
-        margin: 0px 40px 0px 0px;
+        padding-left: 0px;
+        padding: 0px 40px;
     }
     article div p:last-child {
-        margin: 0px 0px 0px 40px;
-    }
-    .readmore {
-        /* READ MORE */
-        padding: 8px 17.5px;
-        margin: 25px 0px 0px;
-        font-family: 'Oswald';
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        background: #55C2D8;
-        border-radius: 18px; 
-        border-width: 0px;   
+        padding-right: 0px;
+        padding: 0px 40px;
     }
     /* Here ends the main box and starts the media box*/
     .media-content {
         width: 100%;
-        height: 666px;
         background: url(assets/imageConference.png);
         background-size: cover;
         background-repeat: no-repeat; 
