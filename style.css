@@ -9,18 +9,16 @@ header {
     background: url(assets/DesktopBackground.png);
     background-size: cover;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 822px;
+    padding: 30px 0px 200px 0px;
 }
 nav {
     display: flex;
     width: 100%;
     align-items: center;
-    padding-top: 40px;
 }
 nav ul{
     display: flex;
@@ -45,6 +43,9 @@ nav ul li {
     color: #FFFFFF;
     text-decoration: none;
 }
+.app-header__nav-menu-button{
+    scale: 0;
+}
 .identifier {
     /* PROJECT */
     width: 50%;
@@ -62,7 +63,7 @@ nav ul li {
     color: #FFFFFF;
     text-decoration: none;
 }   
-header div {
+header > div {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -71,11 +72,10 @@ header div {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding: 180px 0px 15px;
 }
 h1 {
     /* Main headline */
-    width: 386px;
-    height: 118px;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
@@ -86,8 +86,6 @@ h1 {
 }
 .mainsubheadline {
     /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
-    width: 426px;
-    height: 56px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -290,90 +288,41 @@ address {
     }
     /* here starts the header CSS */
     header {
-        background: url(assets/DesktopBackground.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 100%;
-        height: 822px;
-    }
-    nav {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        padding-top: 40px;
+        padding: 30px 0px 200px 0px;
     }
     nav ul{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        list-style: none;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-inline-start: 0;
-        margin: 0;
+        width: 0%;
+        scale: 0;
     }
     nav ul li {
-        padding: 0px 32px 0px 0px;
+        padding: 0px 0px 0px 0px;
     }
     .nav-menu a {
         color: #FFFFFF;
         text-decoration: none;
     }
+    .nav-menu_button {
+        width: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding-right: 38px; 
+    }
+    .nav-menu_button div {
+        width: 100%;
+        height: 3px;
+        background-color: #FFFFFF;
+    }
+
     .identifier {
         /* PROJECT */
-        width: 50%;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 16px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        color: #FFFFFF;
+        text-align: left;
+        flex-grow: 2;
+        padding-left: 38px;
     }
-    .identifier a {
-        color: #FFFFFF;
-        text-decoration: none;
-    }   
-    header div {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-    h1 {
-        /* Main headline */
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 64px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    .mainsubheadline {
-        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.7);
+    header > div {
+        padding: 180px 0px 15px;
     }
     /* Here starts the Main content box */
     article > div {
@@ -399,58 +348,6 @@ address {
         background: url(assets/imageConference.png);
         background-size: cover;
         background-repeat: no-repeat; 
-    }
-    .media-content .media-container {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(140, 79, 42, 0.3);
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .media-content .media-container h2 {
-        /* Learn more about our culture... */
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 64px;
-        text-align: center;
-        color: #FFFFFF;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-    }
-    .media-content .media-container h3 {
-        /* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. */
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        text-align: center;
-        color: #FFFFFF;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-    }
-    .media-container div {
-        width: 145px;
-        height: 145px;
-        border-radius: 50%;
-        background-color: #39C2D7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 60px 0px 60px;  
-    }
-    .play-icon {
-        /* play-icon */
-        width: 55px;
-        height: 80px;
-        font-size: 70px;
-        background: transparent;
-        color: #FFFFFF;
-        border-width: 0px;
     }
     /* Here starts the Footer and ends the media box */
     .footer-head {
