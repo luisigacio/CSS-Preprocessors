@@ -93,6 +93,14 @@ h1 {
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
 }
+.anime-logo {
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+.anime-logo:hover {
+        transform:rotateY(-180deg);
+        scale: 1.82;
+}
 /* Here starts the Main content box */
 article {
     width: 100%;
@@ -162,8 +170,15 @@ article div p:last-child {
     color: #FFFFFF;
     background: #55C2D8;
     border-radius: 18px; 
-    border-width: 0px;   
+    border-width: 0px;  
+    transition: all 1s; 
+    transform-origin: left;
 }
+.readmore:hover {
+    transform: rotate(12deg)
+}
+
+
 /* Here ends the main box and starts the media box*/
 .media-content {
     width: 100%;
@@ -214,16 +229,29 @@ article div p:last-child {
     align-items: center;
     justify-content: center;
     margin: 60px 0px 60px;  
+    transition: all 1s;
 }
 .play-icon {
     /* play-icon */
-    width: 55px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
+    padding-left: 22PX;
     font-size: 70px;
     background: transparent;
     color: #FFFFFF;
     border-width: 0px;
+    transition: all 1s;
 }
+.play-icon:hover {
+    transform: scale(0.9);
+    color: #39C2D7;
+}
+.media-container div:hover {
+    transform: scale(0.9);
+    background-color: #FFFFFF;
+
+}
+
 /* Here starts the Footer and ends the media box */
 footer {
     width: 100%;
