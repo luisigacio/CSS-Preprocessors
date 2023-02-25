@@ -43,7 +43,6 @@ header {
     position: absolute;
     transform-origin: right;
     top: 0;
-
     width: 100%;
     height: 100%;
     
@@ -53,7 +52,6 @@ header {
     animation-direction: alternate;
 
 }
-
 nav {
     display: flex;
     width: 100%;
@@ -344,6 +342,25 @@ address {
     color: rgba(255, 255, 255, 0.4);
     flex-grow: 1;
 }
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes moveLeftToRight {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.07);
+        
+
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     body {
@@ -356,6 +373,18 @@ address {
     header {
         align-items: center;
         padding: 30px 0px 200px 0px;
+    }
+    .dots-and-lines {
+        animation-duration: 2s;
+        animation-name: fadeInOut;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .little-dots {
+        animation-duration: 2s;
+        animation-name: moveLeftToRight;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
     nav ul{
         width: 0%;
@@ -439,23 +468,22 @@ address {
         text-align: center;
         align-self: center;
     }
-}
-
-@keyframes fadeInOut {
-    from {
-        opacity: 0;
+    @keyframes fadeInOut {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes moveLeftToRight {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.07);
-        
-
+    @keyframes moveLeftToRight {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.1);
+            
+    
+        }
     }
 }
