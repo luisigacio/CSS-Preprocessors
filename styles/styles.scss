@@ -1,0 +1,301 @@
+@import "variables";
+@import "media";
+@import "mixins";
+@import "animations";
+@import "mobile";
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: $main_font;
+    font-style: normal;
+
+}
+// here starts the header SCSS
+.header {
+    @include bg_properties;
+    background: $bg-blue;
+    background-position: right;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px 200px 0px;
+}
+.header__dots-and-lines {
+    @include bg_properties;
+    @include fadeout;
+    background: $bg-dots-and-lines;
+    background-size: cover;
+    background-position: right;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.header__little-dots {
+    @include bg_properties;
+    @include moveLeftToRight;
+    background: $bg-little-dots;
+    background-size: cover;
+    background-position: right;
+
+    transform-origin: right;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-transform: uppercase;
+
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.2em;
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        margin: 0;
+    }    
+    .nav__item {
+        padding: 0px 32px 0px 0px;
+    }   
+    .nav__link {
+        color: $white;
+        text-decoration: none;
+    }
+    .nav__home-btn {
+        /* PROJECT */
+        width: 50%;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+}     
+.header__elements-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 180px 0px 15px;
+    z-index: 1;
+
+    .header__tittle {
+        /* Main headline */
+        @include main_tittles;
+        margin: 1em 0em;
+    }
+    .header__subtittle {
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
+        @include main_subtittles;
+        color: $lighter_white;
+        margin-top: 1em;
+    }
+    .header__anime-logo {
+        @include logo__transition;
+    }
+    .header__anime-logo:hover {
+        @include logo__hover
+    }
+}
+// here starts the article content box
+.article {
+    width: 100%;
+    background: $darker_white;
+
+    .article__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 90px 0px;
+    
+        .article__tittle {
+            /* This is the Section Headline, Continues to Two Lines */
+            @include main_tittles;
+            color: $Payne_Grey;
+            margin: 0;
+        }
+        .article__subtitle {
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. */
+            @include main_subtittles;
+            color: $Dim_Gray;
+            padding: 50px 0px 50px 0px;
+        }
+        .article__text-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 80px;
+        }
+        .article__text {
+            text-align: left;    
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $Dim_Gray;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+        .article__text:first-child {
+            padding-left: 150px;
+        }
+
+        .article__text:last-child {
+            padding-right: 150px;
+        }
+        .readmore {
+            /* READ MORE BTN*/
+            @include read_more_btn;
+        }
+        .readmore:hover {
+            transform: rotate(12deg)
+        }
+    }
+}
+// here starts the media box
+.media {
+    width: 100%;
+    height: 666px;
+    background: $bg-conference;
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    .media__container {
+        width: 100%;
+        height: 100%;
+        background-color: $dim_brown;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .media__tittle {
+        /* Learn more about our culture... */
+        @include main_tittles;
+    }
+    .media__subtittle {
+        /* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. */
+        @include main_subtittles;
+    }
+    .media__btn {
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        background-color: $light_blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 0px 60px;  
+        transition: all 1s;
+    }
+    .play-icon {
+        /* play-icon */
+        width: 100%;
+        height: 100%;
+        padding-left: 22PX;
+        font-size: 70px;
+        background: transparent;
+        color: $white;
+        border-width: 0px;
+        transition: all 1s;
+    }
+    .play-icon:hover {
+        transform: scale(0.9);
+        color: $light_blue;
+    }
+    .media__btn:hover {
+        transform: scale(0.9);
+        background-color: $white;
+    }
+}
+// Here starts the Footer
+footer {
+    width: 100%;
+    background: $Payne_Grey;
+
+    .footer__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 39px 150px 74px;
+    }
+    .footer__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
+        align-self: self-start;
+    }
+    .footer__head span {
+        /* PROJECT */ 
+        font-size: 18px;
+        line-height: 16px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 400;
+        padding-left: 15px;
+    }
+    .address {
+        /* 123 Street, Anytown, USA 12345 */
+        font-size: 16px;
+        line-height: 19px;
+        color: $dim_white;
+        flex-grow: 2;
+    }
+    .email {   
+        /* hello@website.com */
+        text-decoration: none;
+        font-style: normal;
+        color: $dim_white;
+
+    }
+    .copy-right {
+        /* © 2021 Project. All rights reserved */
+        align-self: flex-end;
+        color: $dim_white;
+        flex-grow: 1;
+    }
+}
+/* Here starts the keyframe animations */
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes moveLeftToRight {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.07);
+        
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @include media_768;
+}

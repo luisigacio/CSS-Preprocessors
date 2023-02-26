@@ -1,0 +1,23 @@
+//animations
+@mixin fadeout {
+    animation-name: fadeInOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@mixin moveLeftToRight {    
+    animation-duration: 2s;
+    animation-name: moveLeftToRight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+// header logo transitions
+@mixin logo__transition {        
+        transition: all 1s;
+        transition-timing-function: ease-in-out;
+}
+@mixin logo__hover {        
+        transform:rotateY(-180deg);
+        scale: 1.82;
+}

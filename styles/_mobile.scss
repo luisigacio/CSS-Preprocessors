@@ -1,0 +1,98 @@
+@mixin media_768 {
+    body {
+        max-width: 768px;
+    }
+    // here starts the header SCSS for media 768px
+    .nav {  
+        padding-top: 10px;  
+   
+        .nav__item {
+            display: none;
+        } 
+        .nav__home-btn--mobile {
+            text-align: left;
+            flex-grow: 2;
+            padding-left: 38px;
+        }     
+        .nav__menu-button {
+            width: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding-right: 38px; 
+        
+            .nav__ham-line  {
+                width: 100%;
+                height: 3px;
+                background-color: $white;
+            }
+        }
+    }
+
+    // here starts the article content box
+    .article {
+    
+        .article__container {
+            padding: 70px 0px;
+        
+            .article__text-container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+            }
+            .article__text:first-child {
+                padding-left: 0px;
+                padding: 0px 40px;
+            }
+                .article__text:last-child {
+                padding-right: 0px;
+                padding: 0px 40px;
+            }
+        }
+    }
+    // Here starts the Footer
+    footer {
+
+        .footer__head {
+            flex-direction: column;
+            align-items: center;
+            padding: 58px 150px 74px;
+        }
+        .footer__logo {
+            align-self: center;
+            padding-bottom: 31px;
+        }
+        .footer__head span {
+            /* PROJECT */ 
+            padding-left: 15px;
+        }
+        .address {
+            /* 123 Street, Anytown, USA 12345 */
+            text-align: center;
+            padding-bottom: 19px;
+        }
+        .email {   
+            /* hello@website.com */
+            text-decoration: none;
+            font-style: normal;
+            color: $dim_white;
+        }
+        .copy-right {
+            /* © 2021 Project. All rights reserved */
+            text-align: center;
+            align-self: center;
+        }
+    }
+    /* Here starts the keyframe animations */
+    @keyframes mmoveLeftToRight {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.1);
+            
+    
+        }
+    }
+}
